@@ -1,0 +1,24 @@
+Planteamiento del problema:
+
+Una tienda de ropa maneja articulos, tanto para hobres como para mujeres al 
+igual que maneja entradas y salidas de producto.
+
+
+La realizacion del software es para mejorar la eficiencia del negocio en llevar una administracion de 
+inventario mas eficaz y asi poder  disminuir el tiempo que destina el almacenista en anotar sus entradas y salidas 
+de mercancia, revisar faltantes etc.
+
+
+Objetivo
+Poder contabilizar de una forma facil y eficiente el inventario de una tienda de calzado,
+en la cual el usuario pueda capturar las mercancia que entra, y sale del mismo cumpliendo con el metodo de control de inventarios UEPS, asi como lanzar
+una alerta que avise si la existencia de un producto llega a un limite minimo
+para que el usuario tenga tiempo de surtir dicho producto antes de que se termine,
+evitando asi una perdia de venta.
+
+
+Requerimientos
+El cliente requiere poder controlar las existencias del almacen.
+Poder comparar la existencia del inventario del sistema contra el inventario fisico.
+Mandar una alerta cuando la existencia de cada producto llegue a un minimo.
+Contar con el control de quien hace movimientos sobre el inventario con un ID.
