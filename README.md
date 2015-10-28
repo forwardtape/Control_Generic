@@ -1,2 +1,2 @@
 # Control_Generic
-Open Source software to control clothes stores
+Open Source software to manage a clothe store inventory.
