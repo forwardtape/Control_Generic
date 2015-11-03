@@ -1,24 +1,52 @@
 Planteamiento del problema:
 
-Una tienda de ropa maneja articulos, tanto para hobres como para mujeres al 
-igual que maneja entradas y salidas de producto.
 
-
-La realizacion del software es para mejorar la eficiencia del negocio en llevar una administracion de 
-inventario mas eficaz y asi poder  disminuir el tiempo que destina el almacenista en anotar sus entradas y salidas 
-de mercancia, revisar faltantes etc.
+El almacenista Registra entradas y las salidas de mercancía de forma manual
+en un libro de inventarios del negocio.
+El almacenista invierte muchas horas de trabajo para registrar las entradas
+de producto en el libro de inventarios y poder calcular el total de cada
+producto,  de la misma forma invierte muchas horas de trabajo para registrar
+las salidas de cada producto y calcular al final de la jornada el total
+de existencias.
+A ese tiempo que utiliza el almacenista, se le agrega  el tiempo que tiene
+que usar el mismo para comparar y verificar el registro de inventarios,
+con el inventario físico. 
 
 
 Objetivo
-Poder contabilizar de una forma facil y eficiente el inventario de una tienda de ropa,
-en la cual el usuario pueda capturar las mercancia que entra, y sale del mismo cumpliendo con el metodo de control de inventarios UEPS, asi como lanzar
-una alerta que avise si la existencia de un producto llega a un limite minimo
-para que el usuario tenga tiempo de surtir dicho producto antes de que se termine,
-evitando asi una perdia de venta.
+
+Realizar software  que permita manejar de una forma eficiente el proceso de
+registrar entradas y salidas así, como actualizar las existencias de forma
+automática, permitiendo así poder  disminuir el tiempo que destina el almacenista
+en registrar entradas y salidas  mercancía dentro del inventario de almacén.
 
 
 Requerimientos
-El cliente requiere poder controlar las existencias del almacen.
-Poder comparar la existencia del inventario del sistema contra el inventario fisico.
-Mandar una alerta cuando la existencia de cada producto llegue a un minimo.
-Contar con el control de quien hace movimientos sobre el inventario mediante un ID.
+
+
+
+Numero	Requerimiento					Descripción						Prioridad
+
+R1	El almacenista podrá llenar un formato		El sistema recibirá el formato y actualizara 		1
+	de entrada de producto				la existencia en el inventario.	
+
+R2	El almacenista podrá llenar un formato 		El sistema recibirá el formato y actualizara 		1
+	de salida de producto.				la existencia en el inventario.
+
+R3	El almacenista pueda solicitar un listado 	El sistema generara un reporte con un listado 		2
+	de existencias de productos.			de los productos y su existencias.
+
+R4	El almacenista pueda determinar una 		El sistema relacionara el mínimo de existencia 		3 
+	existencia mínima para cada producto		con cada producto.
+	en inventario
+
+R5	El sistema muestre una alerta cuando un 	El sistema hará una comparación entre la existencia 	1
+	producto alcance una existencia mínima.		de cada producto y el mínimo establecido 	
+							para el mismo.
+
+R6	El sistema guarde un registro de 		El sistema guardara un Log de cada movimiento		1
+	movimientos.					realizado en el sistema.
+
+R7	El almacenista pueda solicitar 			El sistema generara un reporte de forma ordenada 	3
+	un registro de movimientos.			con cada Log registrado.
+
