@@ -41,6 +41,16 @@ CREATE TABLE `articulo` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `articulo`
+--
+
+LOCK TABLES `articulo` WRITE;
+/*!40000 ALTER TABLE `articulo` DISABLE KEYS */;
+INSERT INTO `articulo` VALUES (1,'Negro','Flexi','4',300,5,1),(2,'Blanco','Ozono','5',400,4,1),(3,'Negro','Flexi','4',350,3,1);
+/*!40000 ALTER TABLE `articulo` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `ciudad`
 --
 
@@ -53,6 +63,16 @@ CREATE TABLE `ciudad` (
   PRIMARY KEY (`idCiudad`)
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ciudad`
+--
+
+LOCK TABLES `ciudad` WRITE;
+/*!40000 ALTER TABLE `ciudad` DISABLE KEYS */;
+INSERT INTO `ciudad` VALUES (1,'Ajijic'),(2,'Chapala'),(3,'Cocula'),(4,'Guadalajara'),(5,'Jocotepec'),(6,'Lagos de Moreno'),(7,'Puerto Vallarta'),(8,'Tequila'),(9,'Tlajomulco de Zuñiga'),(10,'Tlaquepaque'),(11,'Tonalá'),(12,'Zapopan');
+/*!40000 ALTER TABLE `ciudad` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `entradas_salidas`
@@ -74,8 +94,18 @@ CREATE TABLE `entradas_salidas` (
   KEY `fk_entradas_salidas_usuario1_idx` (`codUsuario`),
   CONSTRAINT `fk_entradas_salidas_usuario1` FOREIGN KEY (`codUsuario`) REFERENCES `usuario` (`idUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_idArticulo` FOREIGN KEY (`codArticulo`) REFERENCES `articulo` (`idArticulo`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `entradas_salidas`
+--
+
+LOCK TABLES `entradas_salidas` WRITE;
+/*!40000 ALTER TABLE `entradas_salidas` DISABLE KEYS */;
+INSERT INTO `entradas_salidas` VALUES (1,1,'2015-11-11','20:58:16',1,150,1),(2,2,'2015-11-14','13:50:22',0,2,1);
+/*!40000 ALTER TABLE `entradas_salidas` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
 /*!50003 SET @saved_cs_results     = @@character_set_results */ ;
 /*!50003 SET @saved_col_connection = @@collation_connection */ ;
@@ -155,6 +185,16 @@ CREATE TABLE `inventario` (
   CONSTRAINT `fk_codArticuloInv` FOREIGN KEY (`codArticulo`) REFERENCES `articulo` (`idArticulo`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `inventario`
+--
+
+LOCK TABLES `inventario` WRITE;
+/*!40000 ALTER TABLE `inventario` DISABLE KEYS */;
+INSERT INTO `inventario` VALUES (1,250,50),(2,802,100),(3,500,80);
+/*!40000 ALTER TABLE `inventario` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
 /*!50003 SET @saved_cs_results     = @@character_set_results */ ;
 /*!50003 SET @saved_col_connection = @@collation_connection */ ;
@@ -204,6 +244,16 @@ CREATE TABLE `proovedor` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `proovedor`
+--
+
+LOCK TABLES `proovedor` WRITE;
+/*!40000 ALTER TABLE `proovedor` DISABLE KEYS */;
+INSERT INTO `proovedor` VALUES (1,'Jose Luis','Vazquez Corona','Calzado Vazquez','Av. Tonala 1000','33342674',11);
+/*!40000 ALTER TABLE `proovedor` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `tipo_articulo`
 --
 
@@ -216,6 +266,16 @@ CREATE TABLE `tipo_articulo` (
   PRIMARY KEY (`idTipoArticulo`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tipo_articulo`
+--
+
+LOCK TABLES `tipo_articulo` WRITE;
+/*!40000 ALTER TABLE `tipo_articulo` DISABLE KEYS */;
+INSERT INTO `tipo_articulo` VALUES (1,'Bota'),(2,'Sandalia'),(3,'Zapato'),(4,'Tennis'),(5,'Tacon');
+/*!40000 ALTER TABLE `tipo_articulo` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `usuario`
@@ -239,6 +299,16 @@ CREATE TABLE `usuario` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `usuario`
+--
+
+LOCK TABLES `usuario` WRITE;
+/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
+INSERT INTO `usuario` VALUES (1,'Luis Felipe','Ponce Navarro','Queretaro 1071','2147483647',4,'Luis1');
+/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping events for database 'Control_almacen'
 --
 
@@ -255,4 +325,4 @@ CREATE TABLE `usuario` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-11 21:07:40
+-- Dump completed on 2015-11-14 13:53:59
