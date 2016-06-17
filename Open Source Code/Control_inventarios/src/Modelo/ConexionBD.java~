@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 public class ConexionBD {
     private static String     bd   ="Control_almacen";
     private static String     user ="root";
-    private static String     pass ="";
+    private static String     pass ="Luisfeponna1";
     private static String     url  ="jdbc:mysql://localhost/"+bd;
     private static Connection con;
 	
