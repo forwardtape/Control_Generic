@@ -16,9 +16,9 @@ con el inventario físico.
 Objetivo
 
 Realizar software  que permita manejar de una forma eficiente el proceso de
-registrar entradas y salidas así, como actualizar las existencias de forma
+registrar entradas y salidas así como actualizar las existencias de forma
 automática, permitiendo así poder  disminuir el tiempo que destina el almacenista
-en registrar entradas y salidas  mercancía dentro del inventario de almacén.
+en registrar entradas y salidas mercancía dentro del inventario de almacén.
 
 
 Requerimientos
